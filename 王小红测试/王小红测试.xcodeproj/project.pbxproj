@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7980A1A8515C7814DA4E6E89 /* libPods-王小红测试.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB690BAE13D181E49669B5D4 /* libPods-王小红测试.a */; };
+		A7A0EDD9E91344744F28E21F /* libPods-王小红测试Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBC40E4CF553C1AED682E50 /* libPods-王小红测试Tests.a */; };
+		ABC112E92125636B003B872C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC112E82125636B003B872C /* AppDelegate.m */; };
+		ABC112EC2125636B003B872C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC112EB2125636B003B872C /* ViewController.m */; };
+		ABC112EF2125636B003B872C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC112ED2125636B003B872C /* Main.storyboard */; };
+		ABC112F12125636D003B872C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC112F02125636D003B872C /* Assets.xcassets */; };
+		ABC112F42125636D003B872C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC112F22125636D003B872C /* LaunchScreen.storyboard */; };
+		ABC112F72125636D003B872C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC112F62125636D003B872C /* main.m */; };
+		ABC113012125636D003B872C /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC113002125636D003B872C /* _____Tests.m */; };
+		ABC1130C2125636D003B872C /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1130B2125636D003B872C /* _____UITests.m */; };
+		ABC1131B212563C4003B872C /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1131A212563C4003B872C /* TabbarViewController.m */; };
+		ABC1131E21256446003B872C /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1131D21256446003B872C /* NavigationViewController.m */; };
+		ABC1132121256464003B872C /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1132021256464003B872C /* ViewController1.m */; };
+		ABC113242125646E003B872C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC113232125646E003B872C /* ViewController2.m */; };
+		ABC1132721256687003B872C /* SetingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1132621256687003B872C /* SetingTableViewController.m */; };
+		ABC1132A21256DF7003B872C /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1132921256DF7003B872C /* AboutTableViewController.m */; };
+		ABC1132E2125709C003B872C /* EditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1132C2125709C003B872C /* EditionViewController.m */; };
+		ABC1132F2125709C003B872C /* EditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC1132D2125709C003B872C /* EditionViewController.xib */; };
+		EBD1CA48843649E68EA55800 /* libPods-王小红测试UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CA7BB5D6CF5D883564E655 /* libPods-王小红测试UITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABC112FD2125636D003B872C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC112DC2125636B003B872C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC112E32125636B003B872C;
+			remoteInfo = "王小红测试";
+		};
+		ABC113082125636D003B872C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC112DC2125636B003B872C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC112E32125636B003B872C;
+			remoteInfo = "王小红测试";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15CA7BB5D6CF5D883564E655 /* libPods-王小红测试UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-王小红测试UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76DD8804647D698C3EADBF41 /* Pods-王小红测试.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-王小红测试.release.xcconfig"; path = "Pods/Target Support Files/Pods-王小红测试/Pods-王小红测试.release.xcconfig"; sourceTree = "<group>"; };
+		7DBC40E4CF553C1AED682E50 /* libPods-王小红测试Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-王小红测试Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D0154E7F98F7BC00067EE5 /* Pods-王小红测试.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-王小红测试.debug.xcconfig"; path = "Pods/Target Support Files/Pods-王小红测试/Pods-王小红测试.debug.xcconfig"; sourceTree = "<group>"; };
+		ABC112E42125636B003B872C /* 王小红测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "王小红测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC112E72125636B003B872C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABC112E82125636B003B872C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABC112EA2125636B003B872C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ABC112EB2125636B003B872C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ABC112EE2125636B003B872C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABC112F02125636D003B872C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABC112F32125636D003B872C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABC112F52125636D003B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC112F62125636D003B872C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABC112FC2125636D003B872C /* 王小红测试Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "王小红测试Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC113002125636D003B872C /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____Tests.m; sourceTree = "<group>"; };
+		ABC113022125636D003B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC113072125636D003B872C /* 王小红测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "王小红测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC1130B2125636D003B872C /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____UITests.m; sourceTree = "<group>"; };
+		ABC1130D2125636D003B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC11319212563C4003B872C /* TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
+		ABC1131A212563C4003B872C /* TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
+		ABC1131C21256446003B872C /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		ABC1131D21256446003B872C /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		ABC1131F21256464003B872C /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		ABC1132021256464003B872C /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		ABC113222125646E003B872C /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		ABC113232125646E003B872C /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		ABC1132521256687003B872C /* SetingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetingTableViewController.h; sourceTree = "<group>"; };
+		ABC1132621256687003B872C /* SetingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetingTableViewController.m; sourceTree = "<group>"; };
+		ABC1132821256DF7003B872C /* AboutTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutTableViewController.h; sourceTree = "<group>"; };
+		ABC1132921256DF7003B872C /* AboutTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutTableViewController.m; sourceTree = "<group>"; };
+		ABC1132B2125709C003B872C /* EditionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditionViewController.h; sourceTree = "<group>"; };
+		ABC1132C2125709C003B872C /* EditionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditionViewController.m; sourceTree = "<group>"; };
+		ABC1132D2125709C003B872C /* EditionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditionViewController.xib; sourceTree = "<group>"; };
+		ABC1133121257476003B872C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE5E8091803CF09BB5489A3F /* Pods-王小红测试UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-王小红测试UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-王小红测试UITests/Pods-王小红测试UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB690BAE13D181E49669B5D4 /* libPods-王小红测试.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-王小红测试.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E345F86BCAEF39C1817DEB47 /* Pods-王小红测试Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-王小红测试Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-王小红测试Tests/Pods-王小红测试Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EF7E9DDFA7265B15967DD039 /* Pods-王小红测试Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-王小红测试Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-王小红测试Tests/Pods-王小红测试Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F763CE17E6A677696A256899 /* Pods-王小红测试UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-王小红测试UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-王小红测试UITests/Pods-王小红测试UITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABC112E12125636B003B872C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7980A1A8515C7814DA4E6E89 /* libPods-王小红测试.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC112F92125636D003B872C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A0EDD9E91344744F28E21F /* libPods-王小红测试Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC113042125636D003B872C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD1CA48843649E68EA55800 /* libPods-王小红测试UITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A791FF7C85FD879A00A85144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB690BAE13D181E49669B5D4 /* libPods-王小红测试.a */,
+				7DBC40E4CF553C1AED682E50 /* libPods-王小红测试Tests.a */,
+				15CA7BB5D6CF5D883564E655 /* libPods-王小红测试UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABC112DB2125636B003B872C = {
+			isa = PBXGroup;
+			children = (
+				ABC112E62125636B003B872C /* 王小红测试 */,
+				ABC112FF2125636D003B872C /* 王小红测试Tests */,
+				ABC1130A2125636D003B872C /* 王小红测试UITests */,
+				ABC112E52125636B003B872C /* Products */,
+				AF215A78E9A2D70028799511 /* Pods */,
+				A791FF7C85FD879A00A85144 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABC112E52125636B003B872C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABC112E42125636B003B872C /* 王小红测试.app */,
+				ABC112FC2125636D003B872C /* 王小红测试Tests.xctest */,
+				ABC113072125636D003B872C /* 王小红测试UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABC112E62125636B003B872C /* 王小红测试 */ = {
+			isa = PBXGroup;
+			children = (
+				ABC112E72125636B003B872C /* AppDelegate.h */,
+				ABC112E82125636B003B872C /* AppDelegate.m */,
+				ABC112EA2125636B003B872C /* ViewController.h */,
+				ABC112EB2125636B003B872C /* ViewController.m */,
+				ABC11319212563C4003B872C /* TabbarViewController.h */,
+				ABC1131A212563C4003B872C /* TabbarViewController.m */,
+				ABC1131C21256446003B872C /* NavigationViewController.h */,
+				ABC1131D21256446003B872C /* NavigationViewController.m */,
+				ABC1131F21256464003B872C /* ViewController1.h */,
+				ABC1132021256464003B872C /* ViewController1.m */,
+				ABC113222125646E003B872C /* ViewController2.h */,
+				ABC113232125646E003B872C /* ViewController2.m */,
+				ABC1132521256687003B872C /* SetingTableViewController.h */,
+				ABC1132621256687003B872C /* SetingTableViewController.m */,
+				ABC1132821256DF7003B872C /* AboutTableViewController.h */,
+				ABC1132921256DF7003B872C /* AboutTableViewController.m */,
+				ABC1132B2125709C003B872C /* EditionViewController.h */,
+				ABC1132C2125709C003B872C /* EditionViewController.m */,
+				ABC1132D2125709C003B872C /* EditionViewController.xib */,
+				ABC112ED2125636B003B872C /* Main.storyboard */,
+				ABC112F02125636D003B872C /* Assets.xcassets */,
+				ABC112F22125636D003B872C /* LaunchScreen.storyboard */,
+				ABC112F52125636D003B872C /* Info.plist */,
+				ABC112F62125636D003B872C /* main.m */,
+				ABC1133121257476003B872C /* PrefixHeader.pch */,
+			);
+			path = "王小红测试";
+			sourceTree = "<group>";
+		};
+		ABC112FF2125636D003B872C /* 王小红测试Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC113002125636D003B872C /* _____Tests.m */,
+				ABC113022125636D003B872C /* Info.plist */,
+			);
+			path = "王小红测试Tests";
+			sourceTree = "<group>";
+		};
+		ABC1130A2125636D003B872C /* 王小红测试UITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC1130B2125636D003B872C /* _____UITests.m */,
+				ABC1130D2125636D003B872C /* Info.plist */,
+			);
+			path = "王小红测试UITests";
+			sourceTree = "<group>";
+		};
+		AF215A78E9A2D70028799511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95D0154E7F98F7BC00067EE5 /* Pods-王小红测试.debug.xcconfig */,
+				76DD8804647D698C3EADBF41 /* Pods-王小红测试.release.xcconfig */,
+				EF7E9DDFA7265B15967DD039 /* Pods-王小红测试Tests.debug.xcconfig */,
+				E345F86BCAEF39C1817DEB47 /* Pods-王小红测试Tests.release.xcconfig */,
+				CE5E8091803CF09BB5489A3F /* Pods-王小红测试UITests.debug.xcconfig */,
+				F763CE17E6A677696A256899 /* Pods-王小红测试UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABC112E32125636B003B872C /* 王小红测试 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC113102125636D003B872C /* Build configuration list for PBXNativeTarget "王小红测试" */;
+			buildPhases = (
+				CCAC16F73044CF0531EB7211 /* [CP] Check Pods Manifest.lock */,
+				ABC112E02125636B003B872C /* Sources */,
+				ABC112E12125636B003B872C /* Frameworks */,
+				ABC112E22125636B003B872C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "王小红测试";
+			productName = "王小红测试";
+			productReference = ABC112E42125636B003B872C /* 王小红测试.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABC112FB2125636D003B872C /* 王小红测试Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC113132125636D003B872C /* Build configuration list for PBXNativeTarget "王小红测试Tests" */;
+			buildPhases = (
+				CCF49CE575A0A59DE304BE49 /* [CP] Check Pods Manifest.lock */,
+				ABC112F82125636D003B872C /* Sources */,
+				ABC112F92125636D003B872C /* Frameworks */,
+				ABC112FA2125636D003B872C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABC112FE2125636D003B872C /* PBXTargetDependency */,
+			);
+			name = "王小红测试Tests";
+			productName = "王小红测试Tests";
+			productReference = ABC112FC2125636D003B872C /* 王小红测试Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABC113062125636D003B872C /* 王小红测试UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC113162125636D003B872C /* Build configuration list for PBXNativeTarget "王小红测试UITests" */;
+			buildPhases = (
+				806D3E9E2DE6790FD9232DEC /* [CP] Check Pods Manifest.lock */,
+				ABC113032125636D003B872C /* Sources */,
+				ABC113042125636D003B872C /* Frameworks */,
+				ABC113052125636D003B872C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABC113092125636D003B872C /* PBXTargetDependency */,
+			);
+			name = "王小红测试UITests";
+			productName = "王小红测试UITests";
+			productReference = ABC113072125636D003B872C /* 王小红测试UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABC112DC2125636B003B872C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = GuangdongQi;
+				TargetAttributes = {
+					ABC112E32125636B003B872C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					ABC112FB2125636D003B872C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = ABC112E32125636B003B872C;
+					};
+					ABC113062125636D003B872C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = ABC112E32125636B003B872C;
+					};
+				};
+			};
+			buildConfigurationList = ABC112DF2125636B003B872C /* Build configuration list for PBXProject "王小红测试" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABC112DB2125636B003B872C;
+			productRefGroup = ABC112E52125636B003B872C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABC112E32125636B003B872C /* 王小红测试 */,
+				ABC112FB2125636D003B872C /* 王小红测试Tests */,
+				ABC113062125636D003B872C /* 王小红测试UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABC112E22125636B003B872C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC112F42125636D003B872C /* LaunchScreen.storyboard in Resources */,
+				ABC1132F2125709C003B872C /* EditionViewController.xib in Resources */,
+				ABC112F12125636D003B872C /* Assets.xcassets in Resources */,
+				ABC112EF2125636B003B872C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC112FA2125636D003B872C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC113052125636D003B872C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		806D3E9E2DE6790FD9232DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-王小红测试UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCAC16F73044CF0531EB7211 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-王小红测试-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF49CE575A0A59DE304BE49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-王小红测试Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABC112E02125636B003B872C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC113242125646E003B872C /* ViewController2.m in Sources */,
+				ABC1132A21256DF7003B872C /* AboutTableViewController.m in Sources */,
+				ABC1131B212563C4003B872C /* TabbarViewController.m in Sources */,
+				ABC112EC2125636B003B872C /* ViewController.m in Sources */,
+				ABC1132121256464003B872C /* ViewController1.m in Sources */,
+				ABC1131E21256446003B872C /* NavigationViewController.m in Sources */,
+				ABC112F72125636D003B872C /* main.m in Sources */,
+				ABC112E92125636B003B872C /* AppDelegate.m in Sources */,
+				ABC1132721256687003B872C /* SetingTableViewController.m in Sources */,
+				ABC1132E2125709C003B872C /* EditionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC112F82125636D003B872C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC113012125636D003B872C /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC113032125636D003B872C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC1130C2125636D003B872C /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABC112FE2125636D003B872C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC112E32125636B003B872C /* 王小红测试 */;
+			targetProxy = ABC112FD2125636D003B872C /* PBXContainerItemProxy */;
+		};
+		ABC113092125636D003B872C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC112E32125636B003B872C /* 王小红测试 */;
+			targetProxy = ABC113082125636D003B872C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABC112ED2125636B003B872C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC112EE2125636B003B872C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABC112F22125636D003B872C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC112F32125636D003B872C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABC1130E2125636D003B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABC1130F2125636D003B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABC113112125636D003B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D0154E7F98F7BC00067EE5 /* Pods-王小红测试.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2ZHVYKL3J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/王小红测试/PrefixHeader.pch";
+				INFOPLIST_FILE = "王小红测试/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuangdongQi.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABC113122125636D003B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76DD8804647D698C3EADBF41 /* Pods-王小红测试.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2ZHVYKL3J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/王小红测试/PrefixHeader.pch";
+				INFOPLIST_FILE = "王小红测试/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuangdongQi.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ABC113142125636D003B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF7E9DDFA7265B15967DD039 /* Pods-王小红测试Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2ZHVYKL3J;
+				INFOPLIST_FILE = "王小红测试Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuangdongQi.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/王小红测试.app/王小红测试";
+			};
+			name = Debug;
+		};
+		ABC113152125636D003B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E345F86BCAEF39C1817DEB47 /* Pods-王小红测试Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2ZHVYKL3J;
+				INFOPLIST_FILE = "王小红测试Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuangdongQi.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/王小红测试.app/王小红测试";
+			};
+			name = Release;
+		};
+		ABC113172125636D003B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5E8091803CF09BB5489A3F /* Pods-王小红测试UITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2ZHVYKL3J;
+				INFOPLIST_FILE = "王小红测试UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuangdongQi.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "王小红测试";
+			};
+			name = Debug;
+		};
+		ABC113182125636D003B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F763CE17E6A677696A256899 /* Pods-王小红测试UITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2ZHVYKL3J;
+				INFOPLIST_FILE = "王小红测试UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GuangdongQi.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "王小红测试";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABC112DF2125636B003B872C /* Build configuration list for PBXProject "王小红测试" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC1130E2125636D003B872C /* Debug */,
+				ABC1130F2125636D003B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC113102125636D003B872C /* Build configuration list for PBXNativeTarget "王小红测试" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC113112125636D003B872C /* Debug */,
+				ABC113122125636D003B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC113132125636D003B872C /* Build configuration list for PBXNativeTarget "王小红测试Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC113142125636D003B872C /* Debug */,
+				ABC113152125636D003B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC113162125636D003B872C /* Build configuration list for PBXNativeTarget "王小红测试UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC113172125636D003B872C /* Debug */,
+				ABC113182125636D003B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABC112DC2125636B003B872C /* Project object */;
+}
