@@ -19,6 +19,11 @@
     
     self.view.backgroundColor = [UIColor yellowColor];
     
+    
+    UIImage *image = [UIImage imageNamed:@"IMG_1161.gif"];
+    
+//    ImageType imageType = ImageDetectType((__bridge CFDataRef)UIImagePNGRepresentation(image));
+    NSLog(@"");
 }
 
 - (void)didReceiveMemoryWarning {
