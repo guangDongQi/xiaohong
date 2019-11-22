@@ -5,8 +5,11 @@
 
 import requests
 from lxml import etree
+import json
 
 array = []
+
+# 获取主页面输入
 
 url = "https://gushi.1or9.com/gushifenlei.html"
 
@@ -18,6 +21,8 @@ html = etree.HTML(response.text)
 
 links = html.xpath('/html/body/div[2]/main/div/div/article/div/div/h2/a/@href')
 
+# 获取主页面下子分类
+
 for link in links:
 
     listLink = 'https://gushi.1or9.com' + link
@@ -28,171 +33,113 @@ for link in links:
 
     listHtml = etree.HTML(listResponse.text)
 
-    list_div = listHtml.xpath('/html/body/div[2]/main/div/div/section[2]/article')
-
-
     page = 1
     totalPage = 1
-    right = listHtml.xpath('/html/body/div[2]/main/div/div/nav/ul/li[17]/a/text()')[0]
+    lu_list = listHtml.xpath('/html/body/div[2]/main/div/div/nav/ul/li')
+    title_name = listHtml.xpath('/html/body/div[2]/main/div/div/section[1]/h1/text()')[0]
+    if len(lu_list) >= 15:
+        right_text_xpath = '/html/body/div[2]/main/div/div/nav/ul/li[15]/a/text()'
+        right_text = listHtml.xpath(right_text_xpath)[0]
+        pageLiHref = listHtml.xpath('/html/body/div[2]/main/div/div/nav/ul/li[15]/a/@href')[0]
+        pageLiHref = pageLiHref.replace(link + '/page', '')
+        pageLiHref = pageLiHref.replace('/', '')
 
-        if right == '»»':
-            pageLiHref = listHtml.xpath('/html/body/div[2]/main/div/div/nav/ul/li[17]/a/text()')[0]
-            pageLiHref = pageLiHref.replace(link + '/page', '')
-            pageLiHref = pageLiHref.replace('/', '')
+        print('有多页，共：' + pageLiHref)
+        totalPage = int(pageLiHref)
+    else:
+        
+        totalPage = len(lu_list)
+        print('共有' + str(totalPage) + '页')
 
-            print(pageLiHref);
-
-            totalPage = int(pageLiHref)
+    
 
     while (page <= totalPage):
 
+        pageLink = ''
+        pageHtml = ''
+        if page == 1:
 
-    count = 1
-    while (count <= len(list_div)):
+            pageLink = 'https://gushi.1or9.com' + link
+            listResponse = requests.get(url=pageLink)
+            listResponse.encoding = response.apparent_encoding
+            pageHtml = etree.HTML(listResponse.text)
 
-        content_url = listHtml.xpath('/html/body/div[2]/main/div/div/section[2]/article/header/h2/a/@href')
+        else:
 
-        url = content_url[count - 1]
+            pageLink = 'https://gushi.1or9.com' + link + '/page/' + str(page)
+            listResponse = requests.get(url=pageLink)
+            listResponse.encoding = response.apparent_encoding
+            pageHtml = etree.HTML(listResponse.text)
 
-        content_Link = 'https://gushi.1or9.com' + url
-
-        content_Response = requests.get(url=content_Link)
-
-        content_Response.encoding = response.apparent_encoding
-
-        content_Html = etree.HTML(content_Response.text)
-    
-        name = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/h1/text()')
-
-        tag = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/div/a/text()')
-
-        time = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/time/text()')
-
-        text_count = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/span[1]/text()')
-
-        redCount = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/span[2]/text()')
+        # 爬取故事列表
         
-        content = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/div[1]/text()')
+        list_div = pageHtml.xpath('/html/body/div[2]/main/div/div/section[2]/article')
+        count = 1
+        while (count <= len(list_div)):
+            
+            # 故事内容url
+            content_url = pageHtml.xpath('/html/body/div[2]/main/div/div/section[2]/article/header/h2/a/@href')
 
-        dic = {
-                'name' : name[0],
-                'link' : content_Link,
-                'content' : content,
-                'tag':tag[0],
-                'time':time[0],
-                'textCount':text_count[0],
-                'redCount':redCount[0],
-            }
+            url = content_url[count - 1]
 
-        array.append(dic)
+            content_Link = 'https://gushi.1or9.com' + url
 
-        print('爬取-' + name[0])
+            content_Response = requests.get(url=content_Link)
 
-        count = count + 1
- 
+            content_Response.encoding = response.apparent_encoding
+
+            content_Html = etree.HTML(content_Response.text)
+        
+            name = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/h1/text()')
+
+            tag = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/div/a/text()')
+
+            time = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/time/text()')[0]
+            time = time.replace('\n', '')
+            time = time.replace(' ', '')
+
+            text_count = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/span[1]/text()')
+
+            redCount = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/header/div/span[2]/text()')
+            
+            content = content_Html.xpath('/html/body/div[2]/main/div/div/article[1]/div[1]/p/text()')
+
+            dic = {
+                    'name' : name[0],
+                    'link' : content_Link,
+                    'content' : content,
+                    'tag':tag[0],
+                    'time':time,
+                    'textCount':text_count[0],
+                    'redCount':redCount[0],
+                }
+
+            print(dic)
+
+            array.append(dic)
+
+            print('爬取-' + name[0])
+
+            count = count + 1
+
+            
+
+        print(str(page) + '页爬取完毕' + '共计:' + str(len(array)) + '故事')
+
+
+        page = page + 1 
+
+    print(title_name + '爬取完毕' + '共计:' + str(len(array)) + '故事')
+
+
 
 
 # 转json
 jsObj = json.dumps(array)
-fileObject = open('一千零一夜.json', 'w')
+fileObject = open('gushi.1or9.com.json', 'w')
 fileObject.write(jsObj)
 fileObject.close()
 
 
 print('爬取完成')
 
-
-
-
-    
-
-
-# import requests
-# from lxml import etree
-# import json
-
-# url = 'https://gushi.1or9.com/gushifenlei.html'
-# req = requests.get(url)
-# req.encoding = 'utf-8'
-
-# html = etree.HTML(req.text)
-
-# print(html.text)
-
-# # html_data = etree.tostring(html)
-
-# # html = etree.parse('./test.html', etree.HTMLParser())
-# # result = html.xpath('//*')
-
-
-# name = html.xpath('//*[@id="content"]/article/div/div/h2/text()')
-
-# print(name)
-
-
-# # print(html.text)
-
-# # 获取全部html内容
-# soup = BeautifulSoup(html.text, 'html.parser')
-
-
-# # print(html.text)
-
-# for item in soup.find_all('div',"post-content"):
-    
-
-#     for h2 in item.find_all('h2',''):
-
-#         name = h2.text
-#         print(name)
-
-#         link = h2.a.attrs['href']
-#         print(link)
-
-#         # 获取page 用
-#         itemHtml = requests.get('https://gushi.1or9.com' + link)
-#         itemHtml.encoding='utf-8'
-#         itemSoup = BeautifulSoup(itemHtml.text, 'html.parser')
-
-#         # 获取总页数
-#         for pageItem in itemSoup.find_all('nav',"pagination"):
-
-#             # print(pageItem)
-#             page = 1
-#             totalPage = 1
-#             for pageLi in pageItem.find_all('li',''):
-
-#                 if pageLi.text == '»»':
-#                     pageLiHref = pageLi.a['href']
-#                     pageLiHref = pageLiHref.replace(link + '/page', '')
-#                     pageLiHref = pageLiHref.replace('/', '')
-
-#                     print(pageLiHref);
-
-#                     totalPage = int(pageLiHref)
-
-#             while (page <= totalPage):
-
-#                 pageList = 'https://gushi.1or9.com' + link
-#                 if page != 1 :
-#                     pageList = 'https://gushi.1or9.com' + link + '/page/' + str(page)
-
-#                 pageListHtml = requests.get(pageList)
-#                 pageListHtml.encoding='utf-8'
-#                 pageItemSoup = BeautifulSoup(pageListHtml.text, 'html.parser')
-
-#                 print(pageListHtml.text)
-
-#                 for pageItemInfo in pageItemSoup.find_all('div',"mobile-panel"):
-
-#                     print(pageItemInfo)
-
-#                     break
-
-#                 break
-
-#             break
-
-#         break    
-
-#     break
